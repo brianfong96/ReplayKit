@@ -34,6 +34,6 @@ if (Test-Path "dist\ReplayKit.exe") {
     $size = [math]::Round((Get-Item "dist\ReplayKit.exe").Length / 1MB, 1)
     Write-Host "`nBuild succeeded! dist\ReplayKit.exe ($size MB)" -ForegroundColor Green
 } else {
-    Write-Host "`nBuild failed — exe not found." -ForegroundColor Red
+    Write-Host "`nBuild failed - exe not found." -ForegroundColor Red
     exit 1
 }
